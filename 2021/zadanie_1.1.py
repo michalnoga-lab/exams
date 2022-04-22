@@ -20,3 +20,4 @@ if __name__ == '__main__':
           f'{smallest_difference[1]} i wynosi: {smallest_difference[2]}')
     print(f'Największa różnica jest dla liczb: {biggest_difference[0]} oraz '
           f'{biggest_difference[1]} i wynosi :{biggest_difference[2]}')
+
