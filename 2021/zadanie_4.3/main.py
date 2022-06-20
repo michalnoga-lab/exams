@@ -16,7 +16,7 @@ def write_output(output: str) -> None:
 
 
 if __name__ == '__main__':
-    frequencies = collections.Counter(get_instructions())
-    most_frequent = frequencies.most_common()[0]
+    frequencies: {} = collections.Counter(get_instructions())
+    most_frequent: tuple = frequencies.most_common()[0]
 
     write_output(f'Najczęściej dopisywaną literą była litera {most_frequent[0]}, {most_frequent[1]} razy')
