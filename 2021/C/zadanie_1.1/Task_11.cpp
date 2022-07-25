@@ -15,11 +15,30 @@ int findBiggestDifference(int min, int max) {
     return output;
 }
 
+int findSmallestDifference(int min, int max) {
+    int output = max;
+
+    for (int i = min; i <= max / 2; i++) {
+        int difference = abs(max - i);
+        if (difference <= output) {
+            output = difference;
+        }
+    }
+    return output;
+}
+
 int main() {
     setlocale(LC_CTYPE, "Polish");
+    int min = 1000;
+    int max = 9999;
 
-    int biggestDifference = findBiggestDifference(1000, 9999);
-    std::cout << "Największa różnica wynosi: " << biggestDifference << std::endl;
+    int biggestDifference = findBiggestDifference(min, max);
+    std::cout << "Największa różnica wynosi: " << biggestDifference << " lub " << (max - biggestDifference)
+              << std::endl;
+
+    int smallestDifference = findSmallestDifference(min, max);
+    std::cout << "Najmniejsza różnica wynosi: " << smallestDifference << " lub " << (max - smallestDifference)
+              << std::endl;
 
     return 0;
 }
