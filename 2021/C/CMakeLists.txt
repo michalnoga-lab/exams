@@ -3,4 +3,4 @@ project(C)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(C main.cpp zadanie_1.1/Task_11.cpp zadanie_1.1/Task_11.h)
+add_executable(C main.cpp)
