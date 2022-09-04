@@ -30,6 +30,7 @@ public class Task_1_1 {
         for (int i = 0; i < numbers.size(); i++) {
             Integer complement = getComplement(numbers.get(i));
             Integer difference = Math.abs(numbers.get(i) - complement);
+
             if (output.get(0) < difference && numbers.get(i) <= 5000) {
                 output.set(0, difference);
                 output.set(1, numbers.get(i));
@@ -41,7 +42,20 @@ public class Task_1_1 {
     }
 
     private static List<Integer> getSmallestDifference(List<Integer> numbers) {
+        List<Integer> output = new ArrayList<>(Arrays.asList(10000, 0, 0));
 
+        for (int i = 0; i < numbers.size(); i++) {
+            Integer complement = getComplement(numbers.get(i));
+            Integer difference = Math.abs(numbers.get(i) - complement);
+
+            if (output.get(0) > difference && numbers.get(i) <= 5000) {
+                output.set(0, difference);
+                output.set(1, numbers.get(i));
+                output.set(2, complement);
+            }
+        }
+
+        return output;
     }
 
     public static void main(String[] args) {
