@@ -2,7 +2,7 @@
 #define C_TASK_11_H
 
 
-class TAsk_11 {
+class Task_11 {
 
 };
 
