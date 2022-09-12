@@ -6,7 +6,7 @@
 #define C_TASK_12_H
 
 
-class TAsk_12 {
+class Task_12 {
 
 };
 
