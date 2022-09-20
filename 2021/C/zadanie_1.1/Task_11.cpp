@@ -33,12 +33,10 @@ int main() {
     int max = 9999;
 
     int biggestDifference = findBiggestDifference(min, max);
-    std::cout << "Największa różnica wynosi: " << biggestDifference << " lub " << (max - biggestDifference)
-              << std::endl;
+    cout << "Największa różnica wynosi: " << biggestDifference << " lub " << (max - biggestDifference) << endl;
 
     int smallestDifference = findSmallestDifference(min, max);
-    std::cout << "Najmniejsza różnica wynosi: " << smallestDifference << " lub " << (max - smallestDifference)
-              << std::endl;
+    cout << "Najmniejsza różnica wynosi: " << smallestDifference << " lub " << (max - smallestDifference) << endl;
 
     return 0;
 }
