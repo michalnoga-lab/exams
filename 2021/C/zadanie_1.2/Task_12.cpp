@@ -1,6 +1,8 @@
 #include <valarray>
 #include <iostream>
 
+using namespace std;
+
 int findNumberComplement(int inputNumber) {
     int baseNumber = inputNumber;
     int array[] = {0, 0, 0, 0, 0, 0, 0, 0, 0};
@@ -26,15 +28,15 @@ int main() {
 
     int number1 = 123;
     int complement1 = findNumberComplement(number1);
-    std::cout << "Dopełnieniem liczby " << number1 << " jest liczba " << complement1 << std::endl;
+    cout << "Dopełnieniem liczby " << number1 << " jest liczba " << complement1 << endl;
 
     int number2 = 231;
     int complement2 = findNumberComplement(number2);
-    std::cout << "Dopełenieniem liczby " << number2 << " jest liczba " << complement2 << std::endl;
+    cout << "Dopełenieniem liczby " << number2 << " jest liczba " << complement2 << endl;
 
     int number3 = 987654321;
     int complement3 = findNumberComplement(number3);
-    std::cout << "Dopełenieniem liczby " << number3 << " jest liczba " << complement3 << std::endl;
+    cout << "Dopełenieniem liczby " << number3 << " jest liczba " << complement3 << endl;
 
     return 0;
 }
