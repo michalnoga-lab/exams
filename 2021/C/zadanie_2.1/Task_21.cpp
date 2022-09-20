@@ -1,6 +1,8 @@
 #include <iostream>
 #include <algorithm>
 
+using namespace std;
+
 void calculate(int array[], int n, int x) {
     n++;
     int extendedArray[n];
@@ -27,15 +29,15 @@ void calculate(int array[], int n, int x) {
 }
 
 void print(const int &i) {
-    std::cout << i << ' ';
+    cout << i << ' ';
 }
 
 int main() {
 
     int array1[4] = {26, 3, 5, -4};
-    std::cout << "Dla tablicy " << std::flush;
-    std::for_each(std::begin(array1), std::end(array1), print);
-    std::cout << " otrzymamy po przekształceniu tablicę " << std::flush;
+    cout << "Dla tablicy " << flush;
+    for_each(std::begin(array1), end(array1), print);
+    cout << " otrzymamy po przekształceniu tablicę " << flush;
     calculate(array1, 4, 5);
 
     return 0;
