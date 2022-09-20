@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 void calculate(int parameter) {
     if (parameter > 0) {
         std::cout << parameter << std::endl;
@@ -11,15 +13,15 @@ void calculate(int parameter) {
 
 int main() {
 
-    std::cout << "*****************************" << std::endl;
+    cout << "*****************************" << endl;
     calculate(5);
-    std::cout << "*****************************" << std::endl;
+    cout << "*****************************" << endl;
     calculate(6);
-    std::cout << "*****************************" << std::endl;
+    cout << "*****************************" << endl;
     calculate(7);
-    std::cout << "*****************************" << std::endl;
+    cout << "*****************************" << endl;
     calculate(8);
-    std::cout << "*****************************" << std::endl;
+    cout << "*****************************" << endl;
 
     return 0;
 }
