@@ -45,8 +45,6 @@ public class Task_4_0 {
         List<String> instructions = getInstructionsFromFile();
         List<String> output = new ArrayList<>();
 
-        System.out.println(instructions);
-
         while (instructions.size() > 0) {
             String currentElement = instructions.get(0);
             String firstPart = currentElement.split("\\s")[0];
