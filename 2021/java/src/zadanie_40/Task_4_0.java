@@ -29,7 +29,7 @@ public class Task_4_0 {
 
     private static void saveToFile(List<String> data) {
 
-        try (FileOutputStream stream = new FileOutputStream(OUTPUT_PATH, true)) {
+        try (FileOutputStream stream = new FileOutputStream(OUTPUT_PATH, false)) {
 
             StringBuilder stringBuilder = new StringBuilder();
             data.forEach(stringBuilder::append);
