@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 public class Task_4_1 {
 
 
-    private static final String SOURCE_PATH = System.getProperty("user.dir") + System.getProperty("file.separator") + "src" + System.getProperty("file.separator") + "zadanie_41" + System.getProperty("file.separator") + "przyklad.txt";
+    private static final String SOURCE_PATH = System.getProperty("user.dir") + System.getProperty("file.separator") + "src" + System.getProperty("file.separator") + "zadanie_41" + System.getProperty("file.separator") + "instrukcje.txt";
     private static final String OUTPUT_PATH = System.getProperty("user.dir") + System.getProperty("file.separator") + "src" + System.getProperty("file.separator") + "zadanie_41" + System.getProperty("file.separator") + "wynik4.txt";
 
     private static List<String> getInstructionsFromFile() {
@@ -25,20 +25,6 @@ public class Task_4_1 {
         }
 
         return instructions;
-    }
-
-    private static void saveToFile(List<String> data) {
-
-        try (FileOutputStream stream = new FileOutputStream(OUTPUT_PATH, false)) {
-
-            StringBuilder stringBuilder = new StringBuilder();
-            data.forEach(stringBuilder::append);
-
-            stream.write(stringBuilder.toString().getBytes());
-
-        } catch (Exception e) {
-            System.out.println("Error writing scores to file");
-        }
     }
 
     private static void saveToFile(String data) {
