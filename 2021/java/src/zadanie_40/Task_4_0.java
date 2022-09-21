@@ -3,7 +3,6 @@ package zadanie_40;
 import java.io.FileOutputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Stream;
